@@ -1,11 +1,12 @@
-var a=23;
+var a = 23;
 var count = 0;
-for(i=2;i<a;i++){
-if(a%i==0)
-count++;
-break;
+for (i = 1; i <= a; i++) {
+  if (a % i == 0) {
+    count++;
+  }
 }
-if(count)
-console.log("No");
-else
-console.log("Yes");
+if (count == 2) {
+  console.log("Yes");
+} else {
+  console.log("No");
+}
